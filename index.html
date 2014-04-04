@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MD5Anim trimmer</title>
+  </head>
+
+  <body>
+    <h1>MD5Anim trimmer</h1>
+
+    <div>This tool will cut tails from long floating point numbers to 
+reduce the size of md5anim files. A command line version supporting 
+multiple files in batch can be found <a href="trim_md5anim.sh">here</a>. 
+The source code for this web tool is also available <a 
+href="../md5anim_trim.zip">here</a>.</div><br>
+
+    <div>
+    Upload your file here:
+    <form action="md5anim_trim.php" method="POST" enctype="multipart/form-data">
+      <label for="inputfile">Input file</label><input id="inputfile" type="file" name="inputfile" required><br>
+      <label for="scale">Number of decimals</label><input id="scale" type="number" name="scale" min="1" value="6" required><br>
+      <input type="submit">
+    </form>
+    </div>
+
+  </body>
+</html>
